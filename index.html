@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NodoSur Cloud — Sistema de Gestión Integrado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+<div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="stage">
+
+  <!-- 1 · PORTADA -->
+  <section class="slide active">
+    <div class="container center">
+      <span class="eyebrow" data-anim="blur">UADE · Gestión Ambiental · TP Integrador</span>
+      <h1 class="display xl" data-anim="blur">NodoSur Cloud S.A.</h1>
+      <p class="subtitle" style="margin-top:22px;" data-anim="up">Sistema de Gestión Integrado</p>
+      <p class="lead" style="margin:28px auto 0;" data-anim="up">
+        Ambiental · Seguridad e Higiene · Ergonomía<br/>
+        Datacenter Tier III — Parque Industrial Pilar, Buenos Aires
+      </p>
+    </div>
+  </section>
+
+  <!-- 2 · LA EMPRESA -->
+  <section class="slide">
+    <div class="slide-meta">01 · La empresa</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Quiénes somos</span>
+      <h2 class="display" data-anim="up">Una PYME que construye<br/>su primer datacenter.</h2>
+      <div class="grid cols-4">
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Empleados</div>
+          <div class="stat-value"><span data-count="18">0</span></div>
+          <div class="stat-sub">Operaciones, mantenimiento y seguridad física</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Ubicación</div>
+          <div class="stat-value" style="font-size:1.6rem;">Parque Industrial Pilar</div>
+          <div class="stat-sub">Provincia de Buenos Aires</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Servicios</div>
+          <div class="stat-value" style="font-size:1.6rem;">Housing · Colo · Cloud</div>
+          <div class="stat-sub">Empresas medianas, Estado provincial y banca regional</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Etapa</div>
+          <div class="stat-value"><span class="accent">2027</span></div>
+          <div class="stat-sub">Diseño ejecutivo finalizado · obra civil por iniciar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · TIERS -->
+  <section class="slide">
+    <div class="slide-meta">02 · Confiabilidad</div>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="eyebrow" data-anim="left">Uptime Institute</span>
+          <h2 class="display" data-anim="left">Diseñado<br/>en Tier III.</h2>
+          <p class="lead" style="margin-top:18px;" data-anim="left">
+            Mantenimiento concurrente sin interrumpir el servicio,
+            a un costo mucho menor que Tier IV.
+          </p>
+        </div>
+        <div class="glass" style="padding:32px;" data-anim="right">
+          <div class="bars">
+            <div class="bar-row"><div class="bar-label">Tier I — sin redundancia</div><div class="bar-track"><div class="bar-fill hot" style="width:35%;"></div></div><div class="bar-value">99.67%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier II — N+1 parcial</div><div class="bar-track"><div class="bar-fill hot" style="width:55%;"></div></div><div class="bar-value">99.75%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier III — NodoSur ★</div><div class="bar-track"><div class="bar-fill" style="width:88%;"></div></div><div class="bar-value">99.98%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier IV — 2N total</div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div><div class="bar-value">99.99%</div></div>
+          </div>
+          <p style="font-size:0.8rem;color:var(--ink-dim);margin-top:18px;">
+            Tier III admite hasta 1.6 h de corte al año · Tier I hasta 28.8 h
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · MATRIZ DE RIESGOS -->
+  <section class="slide">
+    <div class="slide-meta">03 · Riesgos laborales</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Matriz probabilidad × severidad</span>
+      <h2 class="display" data-anim="up">Cinco riesgos ALTOS<br/>conviven en la sala.</h2>
+      <div class="risk-matrix-wrap">
+        <div data-anim="left">
+          <div style="display:flex;gap:10px;align-items:center;">
+            <div class="rm-axis" style="writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;">Severidad →</div>
+            <div>
+              <div class="risk-matrix">
+                <div class="rm-cell rm-3">3<span class="rm-count">medio</span></div>
+                <div class="rm-cell rm-6">6<span class="rm-count">3 riesgos</span></div>
+                <div class="rm-cell rm-9">9<span class="rm-count">crítico</span></div>
+                <div class="rm-cell rm-2">2<span class="rm-count">bajo</span></div>
+                <div class="rm-cell rm-4">4<span class="rm-count">3 riesgos</span></div>
+                <div class="rm-cell rm-6">6<span class="rm-count">2 riesgos</span></div>
+                <div class="rm-cell rm-1">1<span class="rm-count">bajo</span></div>
+                <div class="rm-cell rm-2">2<span class="rm-count">1 riesgo</span></div>
+                <div class="rm-cell rm-3">3<span class="rm-count">2 riesgos</span></div>
+              </div>
+              <div class="rm-axis" style="text-align:center;margin-top:8px;">Probabilidad →</div>
+            </div>
+          </div>
+        </div>
+        <div class="risk-list">
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Arco eléctrico / contacto directo</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Energización accidental (LOTO)</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Vuelco de rack en traslado</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Lesión lumbar por carga manual</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Daño auditivo crónico &gt;85 dB</span><span class="risk-score" style="color:var(--red);">6</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · REBA TAREA 1 -->
+  <section class="slide">
+    <div class="slide-meta">04 · Ergonomía — método REBA</div>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="eyebrow" data-anim="left">Tarea 1 · Instalación en rack</span>
+          <h2 class="display" data-anim="left">22 kg a la altura<br/>del pecho.</h2>
+          <p class="lead" style="margin-top:18px;" data-anim="left">
+            Levantar un servidor 2U desde el suelo, sostenerlo e insertarlo en
+            rieles sin ayuda mecánica. REBA lo clasifica riesgo
+            <strong style="color:var(--red);">muy alto — acción inmediata</strong>.
+          </p>
+          <div class="chips" data-anim="left">
+            <div class="chip danger">Flexión de tronco &gt;60°</div>
+            <div class="chip danger">Hombros &gt;90°</div>
+            <div class="chip warn">Agarre sin asa</div>
+          </div>
+        </div>
+        <div class="glass" style="padding:32px;" data-anim="right">
+          <div class="reba-scale">
+            <div class="reba-row"><div class="reba-part">Tronco</div><div class="reba-desc">Flexión &gt;60° + torsión</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Hombros</div><div class="reba-desc">Elevación &gt;90°</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Cuello</div><div class="reba-desc">Extensión al mirar arriba</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Muñecas</div><div class="reba-desc">Desviación + torsión</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Piernas</div><div class="reba-desc">Base inestable</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Carga</div><div class="reba-desc">22 kg sin ayuda mecánica</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · REBA TAREAS 2 Y 3 -->
+  <section class="slide">
+    <div class="slide-meta">05 · Ergonomía — método REBA</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Tareas 2 y 3</span>
+      <h2 class="display" data-anim="up">Bajo el piso<br/>y frente a las pantallas.</h2>
+      <div class="grid cols-2">
+        <div class="glass phase" data-anim="left">
+          <div class="phase-tag">Tarea 2 · Cableado bajo piso técnico</div>
+          <div class="phase-title">40–60 cm de altura · 15 a 40 min</div>
+          <ul>
+            <li>Rodillas en flexión extrema sostenida &gt;135° — REBA 3, muy alto</li>
+            <li>Tronco flexionado &gt;60° en espacio confinado — REBA 3</li>
+            <li>Cuello en flexión forzada hacia abajo — REBA 2</li>
+            <li>Movimientos repetitivos de muñecas en tendido — REBA 2</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="right">
+          <div class="phase-tag">Tarea 3 · Guardia nocturna</div>
+          <div class="phase-title">&gt;6 h sedente · alerta permanente</div>
+          <ul>
+            <li>Postura sedente sostenida sin pausas regulares — riesgo alto</li>
+            <li>Carga mental alta por vigilancia de múltiples sistemas — alto</li>
+            <li>Ciclo circadiano alterado por rotación de turnos — alto</li>
+            <li>Pantallas sin regulación de altura ni distancia — medio</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · MEDIDAS CORRECTIVAS -->
+  <section class="slide">
+    <div class="slide-meta">06 · Ergonomía — correcciones</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Propuesta de medidas</span>
+      <h2 class="display" data-anim="up">Ingeniería primero,<br/>administración después.</h2>
+      <div class="grid cols-2">
+        <div class="glass phase" data-anim="left">
+          <div class="phase-num">⚙</div>
+          <div class="phase-title">Medidas de ingeniería</div>
+          <ul>
+            <li>Elevador de rack obligatorio para equipos &gt;15 kg</li>
+            <li>Rodilleras de gel + carro porta-herramientas bajo piso</li>
+            <li>Consola ergonómica de triple pantalla, regulable, a 70 cm</li>
+            <li>Protección auditiva en sala de servidores</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="right">
+          <div class="phase-num">🕐</div>
+          <div class="phase-title">Medidas administrativas</div>
+          <ul>
+            <li>Límite de 15 minutos bajo piso técnico con rotación</li>
+            <li>Pausas activas cada 2 horas en guardia — 10 min de movilidad</li>
+            <li>Mínimo 7 días en el mismo horario antes de rotar turno</li>
+            <li>Elongación de muñecas al inicio de turno para cableadores</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip ok">Meta: índice REBA post-medida ≤ 4</div>
+        <div class="chip ok">Inversión: USD 3.500 (elevador)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · FUEGO -->
+  <section class="slide">
+    <div class="slide-meta">07 · Seguridad industrial</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Clases de fuego presentes</span>
+      <h2 class="display" data-anim="up">Cuatro fuegos distintos,<br/>un mismo edificio.</h2>
+      <div class="grid cols-4">
+        <div class="glass fire-card" data-anim="pop">
+          <div class="fire-class" style="color:var(--amber);">A</div>
+          <div class="f-what">Sólidos carbonosos</div>
+          <div class="f-ext">Plásticos, cartón, cables → agua pulverizada</div>
+        </div>
+        <div class="glass fire-card" data-anim="pop">
+          <div class="fire-class" style="color:var(--orange);">B</div>
+          <div class="f-what">Líquidos inflamables</div>
+          <div class="f-ext">Gasoil y aceites → polvo ABC / espuma AFFF</div>
+        </div>
+        <div class="glass fire-card" data-anim="pop">
+          <div class="fire-class" style="color:var(--blue);">C</div>
+          <div class="f-what">Eléctrico energizado</div>
+          <div class="f-ext">Sala de servidores → CO₂ / Novec 1230</div>
+        </div>
+        <div class="glass fire-card" data-anim="pop">
+          <div class="fire-class" style="color:var(--magenta);">D</div>
+          <div class="f-what">Metales combustibles</div>
+          <div class="f-ext">Litio en baterías LFP → arena seca / agente D</div>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip">Sala servidores: Novec 1230 automático</div>
+        <div class="chip">Generadores: espuma AFFF</div>
+        <div class="chip">Sala eléctrica: FM-200</div>
+        <div class="chip">Oficinas: sprinklers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · CROQUIS DE EVACUACIÓN -->
+  <section class="slide">
+    <div class="slide-meta">08 · Plan de emergencia</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Croquis de evacuación · Planta NodoSur Cloud</span>
+      <h2 class="display" style="font-size:clamp(1.8rem,3.6vw,2.8rem);" data-anim="up">Dos salidas, un punto de encuentro.</h2>
+      <div class="glass croquis-wrap" data-anim="blur">
+        <svg class="croquis-svg" viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croquis de evacuación de la planta">
+          <!-- Perímetro del edificio -->
+          <rect class="room draw" x="60" y="40" width="640" height="380" rx="6" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/>
+
+          <!-- Salas -->
+          <rect class="room office" x="75" y="55" width="200" height="130" rx="4"/>
+          <text x="175" y="112" text-anchor="middle" font-size="14" font-weight="600">Oficinas</text>
+          <text x="175" y="130" text-anchor="middle" font-size="11" opacity="0.7">Sala de control</text>
+
+          <rect class="room servers" x="290" y="55" width="270" height="220" rx="4"/>
+          <text x="425" y="155" text-anchor="middle" font-size="15" font-weight="600">Sala de servidores</text>
+          <text x="425" y="173" text-anchor="middle" font-size="11" opacity="0.7">Novec 1230 · VESDA</text>
+
+          <rect class="room electric" x="575" y="55" width="110" height="150" rx="4"/>
+          <text x="630" y="120" text-anchor="middle" font-size="12" font-weight="600">Sala eléctrica</text>
+          <text x="630" y="136" text-anchor="middle" font-size="10" opacity="0.7">UPS · Tableros</text>
+
+          <rect class="room gens" x="575" y="220" width="110" height="120" rx="4"/>
+          <text x="630" y="275" text-anchor="middle" font-size="12" font-weight="600">Generadores</text>
+          <text x="630" y="291" text-anchor="middle" font-size="10" opacity="0.7">Gasoil</text>
+
+          <rect class="room waste" x="75" y="290" width="200" height="115" rx="4"/>
+          <text x="175" y="342" text-anchor="middle" font-size="12" font-weight="600">Depósito residuos</text>
+          <text x="175" y="358" text-anchor="middle" font-size="10" opacity="0.7">Peligrosos · RAEE</text>
+
+          <!-- Pasillo -->
+          <text x="425" y="360" text-anchor="middle" font-size="11" opacity="0.55" letter-spacing="4">PASILLO CENTRAL</text>
+
+          <!-- Salidas -->
+          <rect x="52" y="205" width="16" height="60" rx="3" fill="rgba(0,245,160,0.9)"/>
+          <text x="30" y="240" text-anchor="middle" font-size="10" font-weight="700" transform="rotate(-90 30 240)" fill="#00f5a0">SALIDA 1</text>
+          <rect x="692" y="360" width="16" height="55" rx="3" fill="rgba(0,245,160,0.9)"/>
+          <text x="730" y="390" font-size="10" font-weight="700" fill="#00f5a0">SALIDA 2</text>
+
+          <!-- Rutas de escape animadas -->
+          <path class="escape" d="M 175 190 L 175 235 L 80 235"/>
+          <path class="escape" d="M 360 285 L 360 330 L 100 330 L 80 250"/>
+          <path class="escape" d="M 500 285 L 500 385 L 690 385"/>
+          <path class="escape" d="M 630 345 L 630 385 L 690 385"/>
+
+          <!-- Punto de encuentro -->
+          <circle cx="810" cy="430" r="34" fill="rgba(0,245,160,0.14)" stroke="#00f5a0" stroke-width="2.5"/>
+          <text x="810" y="426" text-anchor="middle" font-size="11" font-weight="700" fill="#00f5a0">PUNTO DE</text>
+          <text x="810" y="441" text-anchor="middle" font-size="11" font-weight="700" fill="#00f5a0">ENCUENTRO</text>
+          <path class="escape" d="M 710 388 L 772 415"/>
+
+          <!-- Extintores -->
+          <g font-size="10">
+            <circle cx="300" cy="290" r="7" fill="#ff4d6d"/><text x="300" y="312" text-anchor="middle" opacity="0.8">CO₂</text>
+            <circle cx="550" cy="290" r="7" fill="#ff4d6d"/><text x="550" y="312" text-anchor="middle" opacity="0.8">CO₂</text>
+            <circle cx="590" cy="350" r="7" fill="#ff4d6d"/><text x="592" y="370" text-anchor="middle" opacity="0.8">ABC</text>
+            <circle cx="120" cy="200" r="7" fill="#ff4d6d"/><text x="120" y="222" text-anchor="middle" opacity="0.8">ABC</text>
+          </g>
+
+          <!-- EPO -->
+          <rect x="540" y="42" width="40" height="22" rx="4" fill="rgba(254,228,64,0.9)"/>
+          <text x="560" y="57" text-anchor="middle" font-size="11" font-weight="800" fill="#111">EPO</text>
+
+          <!-- DEA / botiquín -->
+          <rect x="240" y="230" width="26" height="26" rx="5" fill="rgba(255,255,255,0.92)"/>
+          <path d="M 253 235 v 16 M 245 243 h 16" stroke="#ff4d6d" stroke-width="4"/>
+          <text x="253" y="275" text-anchor="middle" font-size="10" opacity="0.8">DEA</text>
+        </svg>
+        <div class="legend">
+          <span><span class="lg-dot" style="background:#00f5a0;"></span>Ruta de escape / salida</span>
+          <span><span class="lg-dot" style="background:#ff4d6d;"></span>Extintor (CO₂ / ABC)</span>
+          <span><span class="lg-dot" style="background:#fee440;"></span>EPO — corte de emergencia</span>
+          <span><span class="lg-dot" style="background:#fff;"></span>DEA + botiquín</span>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip">Señalización fotoluminiscente</div>
+        <div class="chip">Iluminación de emergencia &gt;90 min</div>
+        <div class="chip">Simulacros: 2 evacuaciones/año</div>
+        <div class="chip">1 persona RCP+DEA por turno</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · MARCO LEGAL -->
+  <section class="slide">
+    <div class="slide-meta">09 · Derecho ambiental</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Tres niveles de exigencia</span>
+      <h2 class="display" data-anim="up">Nación, Provincia<br/>y Municipio de Pilar.</h2>
+      <div class="grid cols-3">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Nacional</div>
+          <div class="phase-title">Leyes marco</div>
+          <ul>
+            <li><strong>Ley 25.675</strong> — General del Ambiente: exige EIA previa a la obra</li>
+            <li><strong>Ley 24.051</strong> — Residuos peligrosos: responsabilidad del generador</li>
+            <li><strong>Ley 19.587 + Dec. 351/79</strong> — Higiene y seguridad laboral</li>
+            <li><strong>Ley 27.520</strong> — Cambio climático: orienta el PPA solar</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Provincial · Buenos Aires</div>
+          <div class="phase-title">Registros y servicios</div>
+          <ul>
+            <li><strong>Ley 11.720</strong> — Residuos especiales: inscripción como generador ante OPDS</li>
+            <li><strong>Dec. 1338/96</strong> — Médico del Trabajo y Especialista en H&amp;S matriculados para los 18 empleados</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Municipal · Pilar</div>
+          <div class="phase-title">Habilitaciones</div>
+          <ul>
+            <li>Habilitación de uso del suelo antes de la obra civil</li>
+            <li>Reglamento del Parque: ruido exterior ≤ <strong>55 dB(A)</strong> diurnos — verifica torres de enfriamiento</li>
+            <li>Habilitación comercial previa a la puesta en marcha</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · ASPECTOS E IMPACTOS -->
+  <section class="slide">
+    <div class="slide-meta">10 · ISO 14001 — aspectos ambientales</div>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="eyebrow" data-anim="left">Valoración P + S + A</span>
+          <h2 class="display" data-anim="left">Siete aspectos<br/>significativos.</h2>
+          <p class="lead" style="margin-top:18px;" data-anim="left">
+            Probabilidad + severidad + alcance regulatorio, escala 3–9.
+            Todo aspecto ≥7 requiere control operacional formal en el SGA.
+          </p>
+        </div>
+        <div class="glass" style="padding:32px;" data-anim="right">
+          <div class="bars">
+            <div class="bar-row"><div class="bar-label">E-waste / RAEE</div><div class="bar-track"><div class="bar-fill hot" style="width:100%;"></div></div><div class="bar-value">9</div></div>
+            <div class="bar-row"><div class="bar-label">Energía eléctrica (Scope 2)</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
+            <div class="bar-row"><div class="bar-label">Fugas de HFC</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
+            <div class="bar-row"><div class="bar-label">Baterías usadas</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
+            <div class="bar-row"><div class="bar-label">Consumo de agua</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+            <div class="bar-row"><div class="bar-label">Efluentes de torres</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+            <div class="bar-row"><div class="bar-label">Derrame de combustible</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · POLÍTICA INTEGRADA -->
+  <section class="slide">
+    <div class="slide-meta">11 · Política integrada</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Una sola política, firmada por Dirección</span>
+      <h2 class="display" data-anim="up">Cuatro compromisos.</h2>
+      <div class="grid cols-4">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🌱</div>
+          <div class="phase-title">Ambiental</div>
+          <ul><li>Prevenir la contaminación, minimizar energía y agua</li><li>Certificar ISO 14001:2015 en 2028</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🦺</div>
+          <div class="phase-title">SSO</div>
+          <ul><li>Controlar riesgo eléctrico, cargas, ruido y estrés térmico</li><li>Objetivo: cero accidentes</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">⚖️</div>
+          <div class="phase-title">Legal</div>
+          <ul><li>Cumplir requisitos nacionales, provinciales y municipales</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🔄</div>
+          <div class="phase-title">Mejora continua</div>
+          <ul><li>Objetivos medibles, KPIs y revisión anual con la Alta Dirección</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · RESIDUOS — 5 CORRIENTES -->
+  <section class="slide">
+    <div class="slide-meta">12 · Gestión de residuos</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Segregación en origen</span>
+      <h2 class="display" data-anim="up">Cinco corrientes,<br/>cinco colores.</h2>
+      <div class="grid cols-5">
+        <div class="glass waste-stream" style="border-color:#ff4d6d;" data-anim="pop">
+          <div class="ws-icon">🔋</div>
+          <div class="ws-name" style="color:#ff8fa5;">Peligrosos</div>
+          <div class="ws-what">Baterías, aceites, filtros, refrigerantes · depósito exclusivo, máx. 90 días</div>
+        </div>
+        <div class="glass waste-stream" style="border-color:#ff6b35;" data-anim="pop">
+          <div class="ws-icon">💻</div>
+          <div class="ws-name" style="color:#ffb894;">RAEE</div>
+          <div class="ws-what">Equipos TI de baja + cableado · gestor con certificación R2</div>
+        </div>
+        <div class="glass waste-stream" style="border-color:#fee440;" data-anim="pop">
+          <div class="ws-icon">📦</div>
+          <div class="ws-name" style="color:#ffefa3;">Reciclables</div>
+          <div class="ws-what">Cartón, plástico limpio, papel de oficinas</div>
+        </div>
+        <div class="glass waste-stream" style="border-color:#00f5a0;" data-anim="pop">
+          <div class="ws-icon">🍎</div>
+          <div class="ws-name" style="color:#9df5d3;">Orgánicos</div>
+          <div class="ws-what">Restos de comida y papel sucio de cocina</div>
+        </div>
+        <div class="glass waste-stream" style="border-color:#8b93a7;" data-anim="pop">
+          <div class="ws-icon">🗑️</div>
+          <div class="ws-name" style="color:#c5cad6;">Generales</div>
+          <div class="ws-what">Lo que no tiene otra corriente asignada</div>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip">Manifiesto en cada retiro (Dec. 831/93)</div>
+        <div class="chip">Certificados archivados 5 años</div>
+        <div class="chip">Contención secundaria 110%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · ECONOMÍA CIRCULAR -->
+  <section class="slide">
+    <div class="slide-meta">13 · Economía circular</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Jerarquía de gestión</span>
+      <h2 class="display" data-anim="up">Reciclar es la última<br/>opción, no la primera.</h2>
+      <div class="grid cols-5">
+        <div class="glass phase" data-anim="pop"><div class="phase-num">1</div><div class="phase-title">Reducir</div><ul><li>No sobredimensionar; caza trimestral de servidores zombies</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">2</div><div class="phase-title">Reutilizar</div><ul><li>Producción → staging → desarrollo: +2 años de vida útil</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">3</div><div class="phase-title">Reparar</div><ul><li>Fuentes, ventiladores y discos antes que el equipo entero</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">4</div><div class="phase-title">Banco de partes</div><ul><li>RAM, SSD y NICs catalogadas: USD 200–500 por equipo</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">5</div><div class="phase-title">Reciclar</div><ul><li>Gestor R2 con borrado NIST 800-88 previo</li></ul></div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip ok">Desvío de relleno ≥50% año 1</div>
+        <div class="chip ok">RAEE a reúso ≥40%</div>
+        <div class="chip ok">Trazabilidad 100%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 · OBJETIVOS SMART -->
+  <section class="slide">
+    <div class="slide-meta">14 · Objetivos SMART</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Medibles, con plazo y responsable</span>
+      <h2 class="display" data-anim="up">Cuatro objetivos<br/>del sistema.</h2>
+      <div class="grid cols-4">
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Energía</div>
+          <div class="stat-value">PUE 1.80 → <span class="accent">1.53</span></div>
+          <div class="stat-sub">−15% en 36 meses · ~USD 140k/año de ahorro (500 kW)</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Residuos</div>
+          <div class="stat-value"><span class="accent" data-count="100" data-suffix="%">0</span></div>
+          <div class="stat-sub">Trazabilidad de peligrosos y RAEE desde el mes 1</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Seguridad</div>
+          <div class="stat-value">IF = <span class="accent">0</span></div>
+          <div class="stat-sub">Cero accidentes con días perdidos en el primer año</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Certificación</div>
+          <div class="stat-value"><span class="accent">ISO 14001</span></div>
+          <div class="stat-sub">Antes del 31/12/2028 · cero no conformidades mayores</div>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip">Programas con responsable, recursos y plazo</div>
+        <div class="chip">KPIs mensuales: PUE · WUE · IF · desvío de residuos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 · PHVA -->
+  <section class="slide">
+    <div class="slide-meta">15 · Mejora continua</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Ciclo PHVA aplicado</span>
+      <h2 class="display" data-anim="up">El motor del sistema.</h2>
+      <div class="phva-wrap">
+        <div class="phva-ring" data-anim="pop">
+          <svg viewBox="0 0 300 300">
+            <g class="seg"><path d="M150 30 A120 120 0 0 1 270 150" fill="none" stroke="#00f5d4" stroke-width="26" stroke-linecap="round"/><text x="235" y="72" text-anchor="middle" font-size="26" font-weight="800" fill="#00f5d4" font-family="Space Grotesk">P</text></g>
+            <g class="seg"><path d="M270 150 A120 120 0 0 1 150 270" fill="none" stroke="#00bbf9" stroke-width="26" stroke-linecap="round"/><text x="237" y="240" text-anchor="middle" font-size="26" font-weight="800" fill="#00bbf9" font-family="Space Grotesk">H</text></g>
+            <g class="seg"><path d="M150 270 A120 120 0 0 1 30 150" fill="none" stroke="#9b5de5" stroke-width="26" stroke-linecap="round"/><text x="64" y="240" text-anchor="middle" font-size="26" font-weight="800" fill="#9b5de5" font-family="Space Grotesk">V</text></g>
+            <g class="seg"><path d="M30 150 A120 120 0 0 1 150 30" fill="none" stroke="#f15bb5" stroke-width="26" stroke-linecap="round"/><text x="64" y="72" text-anchor="middle" font-size="26" font-weight="800" fill="#f15bb5" font-family="Space Grotesk">A</text></g>
+            <text x="150" y="158" text-anchor="middle" font-size="20" font-weight="700" fill="#fff" font-family="Space Grotesk">PHVA</text>
+          </svg>
+        </div>
+        <div class="phva-items">
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--cyan);">P</span><div><div class="pi-t">Planificar — anual, enero</div><div class="pi-d">Política, objetivos SMART, programas y aspectos significativos. Dirección + Resp. Ambiental.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--blue);">H</span><div><div class="pi-t">Hacer — continuo</div><div class="pi-d">Controles operacionales, capacitación, mantenimiento, simulacros, auditoría de gestores.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--violet);">V</span><div><div class="pi-t">Verificar — mensual + semestral</div><div class="pi-d">KPIs mensuales, auditoría interna semestral, cumplimiento legal y accidentabilidad.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--magenta);">A</span><div><div class="pi-t">Actuar — ante desvíos + diciembre</div><div class="pi-d">Acciones correctivas con fecha y responsable. Revisión anual por Dirección documentada.</div></div></div>
+        </div>
+      </div>
+      <div class="glass" style="padding:22px 28px;margin-top:22px;border-color:rgba(0,245,160,0.4);" data-anim="up">
+        <strong style="color:var(--green);">Mejora propuesta para el próximo ciclo →</strong>
+        <span style="color:var(--ink-soft);"> incorporar free-cooling con pre-enfriamiento adiabático en la Fase 2 y un scheduler con IA que module la refrigeración en tiempo real según carga térmica y precio de la energía.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 · SGI -->
+  <section class="slide">
+    <div class="slide-meta">16 · Gestión integrada</div>
+    <div class="container center">
+      <span class="eyebrow" data-anim="up">Sistema de Gestión Integrado</span>
+      <h2 class="display" data-anim="up">Un sistema, tres lentes.</h2>
+      <div class="sgi-rings" data-anim="blur">
+        <svg viewBox="0 0 480 340">
+          <circle cx="180" cy="140" r="105" fill="#00f5d4" stroke="#00f5d4"/>
+          <circle cx="300" cy="140" r="105" fill="#9b5de5" stroke="#9b5de5"/>
+          <circle cx="240" cy="215" r="105" fill="#f15bb5" stroke="#f15bb5"/>
+          <text x="140" y="105" text-anchor="middle" font-size="16">SGA</text>
+          <text x="140" y="124" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">ISO 14001</text>
+          <text x="342" y="105" text-anchor="middle" font-size="16">SHI</text>
+          <text x="342" y="124" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">Ley 19.587 · ISO 45001</text>
+          <text x="240" y="290" text-anchor="middle" font-size="16">Ergonomía</text>
+          <text x="240" y="308" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">SRT 592/04 · REBA</text>
+          <text x="240" y="172" text-anchor="middle" font-size="13" fill="#fff">SGI</text>
+        </svg>
+      </div>
+      <div class="chips" style="justify-content:center;" data-anim="up">
+        <div class="chip">Una política</div>
+        <div class="chip">Un ciclo PHVA</div>
+        <div class="chip">Registros unificados</div>
+        <div class="chip">Una revisión anual 360°</div>
+        <div class="chip">Auditoría interna integrada</div>
+        <div class="chip">Un responsable del SGI</div>
+      </div>
+      <p class="lead" style="margin:26px auto 0;" data-anim="up">
+        Un derrame de aceite activa a la vez la respuesta de emergencia,
+        el registro de incidente ambiental y la revisión ergonómica del procedimiento.
+      </p>
+    </div>
+  </section>
+
+  <!-- 18 · CIERRE -->
+  <section class="slide">
+    <div class="container center">
+      <span class="eyebrow" data-anim="blur">Síntesis</span>
+      <h1 class="display xl" data-anim="blur">No son tres sistemas.<br/>Es uno solo.</h1>
+      <p class="lead" style="margin:36px auto 0;max-width:660px;" data-anim="up">
+        Menos carga administrativa, cero duplicaciones y visión de 360° —
+        del riesgo eléctrico al e-waste, del REBA al PUE.
+      </p>
+      <p class="subtitle" style="margin-top:44px;" data-anim="up">NodoSur Cloud S.A. · Pilar · 2026</p>
+    </div>
+  </section>
+
+</div>
+
+<div class="hint" id="hint">← → · espacio · swipe para navegar</div>
+
+<nav class="nav">
+  <button class="nav-btn" id="prevBtn" aria-label="Anterior">‹</button>
+  <div class="dots" id="dots"></div>
+  <div class="counter" id="counter">1 / 18</div>
+  <button class="nav-btn" id="nextBtn" aria-label="Siguiente">›</button>
+</nav>
+
+<script src="js/background.js"></script>
+<script src="js/slides.js"></script>
+</body>
+</html>
