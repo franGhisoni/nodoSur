@@ -99,25 +99,34 @@ body.no-webgl {
 .container { width: 100%; max-width: 1360px; margin: auto; }
 .center { text-align: center; }
 
-/* ===== PANELES DE VIDRIO (oscuros, alto contraste) ===== */
-.glass {
-  background: var(--panel);
-  backdrop-filter: blur(22px) saturate(150%);
-  -webkit-backdrop-filter: blur(22px) saturate(150%);
-  border: 1px solid var(--panel-border);
-  border-radius: 24px;
-  box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 var(--panel-glow);
-  position: relative;
-}
-.glass::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 55% 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent);
-  border-radius: 24px 24px 0 0;
+/* ===== LIQUID GLASS =====
+ * Los estilos visuales de .glass (tinte, refracción, canto iluminado,
+ * especular) los inyecta lib/liquid-glass.js — ver LiquidGlass.glass().
+ */
+
+/* Toast de los toggles de demo (M / B / G) */
+.lg-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  z-index: 200;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(10, 12, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.lg-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* ===== TIPOGRAFÍA ===== */
@@ -548,11 +557,14 @@ h1, h2, h3 {
   gap: 13px;
   padding: 11px 18px;
   border-radius: 999px;
-  background: rgba(10, 12, 26, 0.72);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  background: rgba(10, 12, 26, 0.55);
+  backdrop-filter: blur(16px) saturate(180%) brightness(1.08);
+  -webkit-backdrop-filter: blur(16px) saturate(180%) brightness(1.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 10px 36px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.30),
+    inset 0 -8px 16px -8px rgba(0, 0, 0, 0.4);
 }
 .nav-btn {
   width: 36px; height: 36px;
