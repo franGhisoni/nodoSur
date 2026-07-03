@@ -308,29 +308,68 @@
   <section class="slide">
     <div class="slide-meta">08 · Riesgos laborales</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Matriz probabilidad × severidad (escala 1–3)</span>
-      <h2 class="display" data-anim="up">Cinco riesgos nivel 6<br/>requieren control inmediato.</h2>
+      <span class="eyebrow" data-anim="up">Matriz probabilidad × severidad (escala 1–3 · nivel = P × S)</span>
+      <h2 class="display" data-anim="up">Doce peligros evaluados,<br/>cinco en nivel alto.</h2>
       <div class="risk-matrix-wrap">
         <div data-anim="left">
           <div style="display:flex;gap:10px;align-items:center;">
             <div class="rm-axis" style="writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;">Severidad →</div>
             <div>
-              <div class="risk-matrix">
-                <div class="rm-cell rm-3">3<span class="rm-count">medio</span></div>
-                <div class="rm-cell rm-6">6<span class="rm-count">3 riesgos</span></div>
-                <div class="rm-cell rm-9">9<span class="rm-count">crítico</span></div>
-                <div class="rm-cell rm-2">2<span class="rm-count">bajo</span></div>
-                <div class="rm-cell rm-4">4<span class="rm-count">3 riesgos</span></div>
-                <div class="rm-cell rm-6">6<span class="rm-count">2 riesgos</span></div>
-                <div class="rm-cell rm-1">1<span class="rm-count">bajo</span></div>
-                <div class="rm-cell rm-2">2<span class="rm-count">1 riesgo</span></div>
-                <div class="rm-cell rm-3">3<span class="rm-count">2 riesgos</span></div>
+              <div class="rm-grid">
+                <!-- Fila S3 (muy grave / fatal) -->
+                <div class="rm-side">3</div>
+                <div class="rm-cell rm-l-med">
+                  <div class="rm-head"><span class="rm-num">3</span><span class="rm-tag">Medio</span></div>
+                  <div class="rm-risks"><span>Descarga de agente gaseoso</span><span>Gases tóxicos (H₂ · HF · CO)</span></div>
+                </div>
+                <div class="rm-cell rm-l-high">
+                  <div class="rm-head"><span class="rm-num">6</span><span class="rm-tag">Alto</span></div>
+                  <div class="rm-risks"><span>Arco eléctrico</span><span>Energización accidental (LOTO)</span><span>Vuelco de rack</span></div>
+                </div>
+                <div class="rm-cell rm-l-crit">
+                  <div class="rm-head"><span class="rm-num">9</span><span class="rm-tag">Crítico</span></div>
+                  <div class="rm-empty">Sin peligros en esta celda — y el objetivo es que siga así</div>
+                </div>
+                <!-- Fila S2 (grave) -->
+                <div class="rm-side">2</div>
+                <div class="rm-cell rm-l-low">
+                  <div class="rm-head"><span class="rm-num">2</span><span class="rm-tag">Bajo</span></div>
+                  <div class="rm-empty">—</div>
+                </div>
+                <div class="rm-cell rm-l-med">
+                  <div class="rm-head"><span class="rm-num">4</span><span class="rm-tag">Medio</span></div>
+                  <div class="rm-risks"><span>Caída de servidor</span><span>Estrés térmico (pasillo caliente)</span><span>Caída por piso técnico</span></div>
+                </div>
+                <div class="rm-cell rm-l-high">
+                  <div class="rm-head"><span class="rm-num">6</span><span class="rm-tag">Alto</span></div>
+                  <div class="rm-risks"><span>Lesión lumbar por carga</span><span>Daño auditivo crónico</span></div>
+                </div>
+                <!-- Fila S1 (leve) -->
+                <div class="rm-side">1</div>
+                <div class="rm-cell rm-l-low">
+                  <div class="rm-head"><span class="rm-num">1</span><span class="rm-tag">Bajo</span></div>
+                  <div class="rm-empty">—</div>
+                </div>
+                <div class="rm-cell rm-l-low">
+                  <div class="rm-head"><span class="rm-num">2</span><span class="rm-tag">Bajo</span></div>
+                  <div class="rm-risks"><span>Tropiezo con cables</span></div>
+                </div>
+                <div class="rm-cell rm-l-med">
+                  <div class="rm-head"><span class="rm-num">3</span><span class="rm-tag">Medio</span></div>
+                  <div class="rm-risks"><span>Hipotermia localizada (pasillo frío)</span></div>
+                </div>
+                <!-- Fila de etiquetas de probabilidad -->
+                <div></div>
+                <div class="rm-bottom">1</div>
+                <div class="rm-bottom">2</div>
+                <div class="rm-bottom">3</div>
               </div>
               <div class="rm-axis" style="text-align:center;margin-top:8px;">Probabilidad →</div>
             </div>
           </div>
         </div>
         <div class="risk-list">
+          <div style="font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-dim);font-weight:700;margin-bottom:4px;" data-anim="right">Nivel 6 — exigen control inmediato</div>
           <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Arco eléctrico / contacto directo — tableros BT/MT, UPS, PDU</span><span class="risk-score" style="color:var(--red);">6</span></div>
           <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Energización accidental durante mantenimiento (LOTO)</span><span class="risk-score" style="color:var(--red);">6</span></div>
           <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Vuelco de rack durante traslado (500–1.500 kg)</span><span class="risk-score" style="color:var(--red);">6</span></div>

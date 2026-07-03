@@ -64,8 +64,10 @@
 
 ## PERSONA A — Riesgos laborales y ergonomía (min 7 a 9.5)
 
-### Slide 9 · Matriz de riesgos (40 s)
-> Evaluamos los riesgos laborales con una matriz de probabilidad por severidad, escala 1 a 3 en cada eje. Del análisis salen cinco riesgos de nivel 6 — alto — que exigen control inmediato: arco eléctrico en tableros y UPS; energización accidental durante mantenimiento; vuelco de rack, que cargado pesa entre 500 y 1.500 kilos; lesión lumbar por carga manual; y daño auditivo crónico, porque la sala supera los 85 decibeles de forma permanente.
+### Slide 9 · Matriz de riesgos (50 s)
+> Identificamos doce peligros y los evaluamos con una matriz de probabilidad por severidad, escala 1 a 3 en cada eje: el nivel de riesgo es el producto, de 1 a 9. En la matriz, cada peligro está ubicado en su celda. Abajo a la izquierda, lo leve e improbable — un tropiezo con cables. La celda 9 — muy probable y fatal — está vacía, y el objetivo del sistema es que siga así.
+>
+> Lo que nos importa son las dos celdas de nivel 6: arriba, lo probable y muy grave — arco eléctrico, energización accidental durante mantenimiento, y vuelco de rack, que cargado pesa entre 500 y 1.500 kilos. Y a la derecha, lo muy frecuente y grave — lesión lumbar por carga manual y daño auditivo, porque la sala supera los 85 decibeles de forma permanente. Esos cinco, listados acá, exigen control inmediato — y son los que atacan los controles que siguen.
 
 →
 
