@@ -17,84 +17,299 @@
 
 <div class="stage">
 
+  <!-- ============ BLOQUE 0 · APERTURA (min 0-1) ============ -->
+
   <!-- 1 · PORTADA -->
   <section class="slide active">
     <div class="container center">
-      <span class="eyebrow" data-anim="blur">UADE · Gestión Ambiental · TP Integrador</span>
+      <span class="eyebrow" data-anim="blur">UADE · Gestión Ambiental (3.3.120) · TP Integrador</span>
       <h1 class="display xl" data-anim="blur">NodoSur Cloud S.A.</h1>
       <p class="subtitle" style="margin-top:22px;" data-anim="up">Sistema de Gestión Integrado</p>
       <p class="lead" style="margin:28px auto 0;" data-anim="up">
-        Ambiental · Seguridad e Higiene · Ergonomía<br/>
+        Ambiental (ISO 14001) · Seguridad e Higiene (Ley 19.587 / ISO 45001) · Ergonomía (REBA)<br/>
         Datacenter Tier III — Parque Industrial Pilar, Buenos Aires
       </p>
     </div>
   </section>
 
-  <!-- 2 · LA EMPRESA -->
+  <!-- ============ BLOQUE 1 · QUÉ ES UN DATACENTER (min 1-5) ============ -->
+
+  <!-- 2 · DEFINICIÓN -->
   <section class="slide">
-    <div class="slide-meta">01 · La empresa</div>
+    <div class="slide-meta">01 · Marco conceptual</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Quiénes somos</span>
-      <h2 class="display" data-anim="up">Una PYME que construye<br/>su primer datacenter.</h2>
+      <span class="eyebrow" data-anim="up">¿Qué es un datacenter?</span>
+      <h2 class="display" data-anim="up">Infraestructura física para<br/>disponibilidad continua.</h2>
+      <p class="lead" style="margin-top:18px;" data-anim="up">
+        Instalación dedicada a alojar, operar y proteger equipos de cómputo, almacenamiento
+        y red. A diferencia de una oficina con servidores, se diseña desde su concepción para
+        cargas eléctricas y térmicas intensivas, redundancia ante fallas y control estricto
+        de acceso físico y ambiental.
+      </p>
+      <div class="grid cols-3">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">01</div>
+          <div class="phase-title">Housing</div>
+          <ul><li>Espacio físico en rack para equipos propiedad del cliente</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">02</div>
+          <div class="phase-title">Colocation</div>
+          <ul><li>Infraestructura eléctrica y de conectividad compartida</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">03</div>
+          <div class="phase-title">Cloud privado</div>
+          <ul><li>Cómputo y almacenamiento como servicio, sin hardware del cliente</li></ul>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip ok">NodoSur Cloud combina los tres modelos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · CARACTERÍSTICAS DISTINTIVAS -->
+  <section class="slide">
+    <div class="slide-meta">02 · Marco conceptual</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Frente a otras instalaciones industriales</span>
+      <h2 class="display" data-anim="up">Cinco propiedades<br/>que lo hacen distinto.</h2>
+      <div class="grid cols-5">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-title">Carga continua</div>
+          <ul><li>Consumo eléctrico ininterrumpido 24 h × 365 días, sin ciclos de producción</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-title">Tolerancia cero</div>
+          <ul><li>Un corte de segundos implica pérdida de datos e incumplimiento de SLA contractuales</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-title">Doble infraestructura crítica</div>
+          <ul><li>Energía y refrigeración igualmente redundantes: la falla de cualquiera compromete todo</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-title">Escalabilidad modular</div>
+          <ul><li>La capacidad crece por bloques (racks, salas, fases): exige dimensionar por adelantado</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-title">Vida útil dual</div>
+          <ul><li>Edificio: 20–30 años · hardware: 3–7 años → reposición e inversión constantes</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · REQUERIMIENTOS TÉCNICOS -->
+  <section class="slide">
+    <div class="slide-meta">03 · Requerimientos técnicos</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">No negociables</span>
+      <h2 class="display" data-anim="up">Cinco requerimientos definen<br/>la confiabilidad.</h2>
+      <div class="grid cols-5">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">⚡</div>
+          <div class="phase-title">Energía redundante</div>
+          <ul><li>Red + UPS + generadores diésel. El nivel N / N+1 / 2N define cuántas fallas simultáneas tolera</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">❄️</div>
+          <div class="phase-title">Refrigeración de precisión</div>
+          <ul><li>18–27 °C y humedad controlada (ASHRAE). Junto al cómputo, el mayor consumo energético</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🔗</div>
+          <div class="phase-title">Conectividad redundante</div>
+          <ul><li>Múltiples proveedores y rutas físicas de fibra: un corte no aísla la instalación</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🛡️</div>
+          <div class="phase-title">Seguridad por capas</div>
+          <ul><li>Perímetro, biometría, CCTV y zonificación: varios niveles de control independientes</li></ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-num">🔥</div>
+          <div class="phase-title">Detección y supresión</div>
+          <ul><li>Aspiración de humo (VESDA) y agentes que no dañan equipos ni ponen en riesgo personas</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · INFRAESTRUCTURA -->
+  <section class="slide">
+    <div class="slide-meta">04 · Infraestructura</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Sistemas de soporte interdependientes</span>
+      <h2 class="display" data-anim="up">De acá nacen los aspectos<br/>ambientales y los riesgos.</h2>
       <div class="grid cols-4">
         <div class="glass stat" data-anim="pop">
-          <div class="stat-label">Empleados</div>
-          <div class="stat-value"><span data-count="18">0</span></div>
-          <div class="stat-sub">Operaciones, mantenimiento y seguridad física</div>
+          <div class="stat-label">White space</div>
+          <div class="stat-sub">Racks y cómputo. Mayor consumidor de energía; densidad térmica creciente por IA.</div>
         </div>
         <div class="glass stat" data-anim="pop">
-          <div class="stat-label">Ubicación</div>
-          <div class="stat-value" style="font-size:1.6rem;">Parque Industrial Pilar</div>
-          <div class="stat-sub">Provincia de Buenos Aires</div>
+          <div class="stat-label">Eléctrico MT/BT</div>
+          <div class="stat-sub">Acometida → tableros → PDU. Origen del riesgo de arco; su eficiencia define el PUE.</div>
         </div>
         <div class="glass stat" data-anim="pop">
-          <div class="stat-label">Servicios</div>
-          <div class="stat-value" style="font-size:1.6rem;">Housing · Colo · Cloud</div>
-          <div class="stat-sub">Empresas medianas, Estado provincial y banca regional</div>
+          <div class="stat-label">UPS</div>
+          <div class="stat-sub">Cubre el lapso corte → generador. Sus baterías son residuo peligroso al final de vida.</div>
         </div>
         <div class="glass stat" data-anim="pop">
-          <div class="stat-label">Etapa</div>
-          <div class="stat-value"><span class="accent">2027</span></div>
-          <div class="stat-sub">Diseño ejecutivo finalizado · obra civil por iniciar</div>
+          <div class="stat-label">Generadores</div>
+          <div class="stat-sub">Respaldo ante cortes prolongados. Emisiones de combustión y almacenamiento de gasoil.</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">HVAC / CRAC / chillers</div>
+          <div class="stat-sub">Extraen el calor de sala. Mayor consumo de agua y refrigerantes de alto GWP.</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Piso técnico</div>
+          <div class="stat-sub">Distribución de aire y cableado. Zona de riesgo eléctrico y de tropiezo.</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Protección contra incendios</div>
+          <div class="stat-sub">Agentes gaseosos (Novec, FM-200) con riesgo para personas durante la descarga.</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">BMS / DCIM</div>
+          <div class="stat-sub">Monitoreo en tiempo real. Habilita medir PUE, WUE y los KPIs del SGA.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3 · TIERS -->
+  <!-- 6 · TIERS: DISPONIBILIDAD VS COSTO -->
   <section class="slide">
-    <div class="slide-meta">02 · Confiabilidad</div>
+    <div class="slide-meta">05 · Confiabilidad y costo</div>
     <div class="container">
-      <div class="two-col">
-        <div>
-          <span class="eyebrow" data-anim="left">Uptime Institute</span>
-          <h2 class="display" data-anim="left">Diseñado<br/>en Tier III.</h2>
-          <p class="lead" style="margin-top:18px;" data-anim="left">
-            Mantenimiento concurrente sin interrumpir el servicio,
-            a un costo mucho menor que Tier IV.
-          </p>
-        </div>
-        <div class="glass" style="padding:32px;" data-anim="right">
-          <div class="bars">
-            <div class="bar-row"><div class="bar-label">Tier I — sin redundancia</div><div class="bar-track"><div class="bar-fill hot" style="width:35%;"></div></div><div class="bar-value">99.67%</div></div>
-            <div class="bar-row"><div class="bar-label">Tier II — N+1 parcial</div><div class="bar-track"><div class="bar-fill hot" style="width:55%;"></div></div><div class="bar-value">99.75%</div></div>
-            <div class="bar-row"><div class="bar-label">Tier III — NodoSur ★</div><div class="bar-track"><div class="bar-fill" style="width:88%;"></div></div><div class="bar-value">99.98%</div></div>
-            <div class="bar-row"><div class="bar-label">Tier IV — 2N total</div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div><div class="bar-value">99.99%</div></div>
+      <span class="eyebrow" data-anim="up">Uptime Institute · análisis costo / disponibilidad</span>
+      <h2 class="display" data-anim="up">Tier III: el óptimo<br/>técnico-económico.</h2>
+      <div class="grid cols-2" style="margin-top:28px;">
+        <div class="glass" style="padding:30px;" data-anim="left">
+          <div style="font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim);font-weight:600;margin-bottom:16px;">
+            Disponibilidad anual (escala 99.60 → 99.99%)
           </div>
-          <p style="font-size:0.8rem;color:var(--ink-dim);margin-top:18px;">
-            Tier III admite hasta 1.6 h de corte al año · Tier I hasta 28.8 h
+          <div class="bars">
+            <div class="bar-row"><div class="bar-label">Tier I — 28.8 h corte/año</div><div class="bar-track"><div class="bar-fill hot" style="width:17.9%;"></div></div><div class="bar-value">99.67%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier II — 22 h corte/año</div><div class="bar-track"><div class="bar-fill hot" style="width:38.5%;"></div></div><div class="bar-value">99.75%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier III — 1.6 h corte/año ★</div><div class="bar-track"><div class="bar-fill" style="width:97.4%;"></div></div><div class="bar-value">99.98%</div></div>
+            <div class="bar-row"><div class="bar-label">Tier IV — 26.3 min corte/año</div><div class="bar-track"><div class="bar-fill" style="width:100%;"></div></div><div class="bar-value">99.99%</div></div>
+          </div>
+          <p style="font-size:0.75rem;color:var(--ink-dim);margin-top:16px;line-height:1.5;">
+            Tier III suma <strong>mantenimiento concurrente</strong> (N+1): se interviene
+            cualquier equipo sin apagar el servicio.
           </p>
+        </div>
+        <div class="glass" style="padding:30px;" data-anim="right">
+          <div style="font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim);font-weight:600;margin-bottom:16px;">
+            CAPEX relativo de construcción (índice · Tier I = 1.0)
+          </div>
+          <div class="bars">
+            <div class="bar-row"><div class="bar-label">Tier I</div><div class="bar-track"><div class="bar-fill hot" style="width:45%;"></div></div><div class="bar-value">1.0×</div></div>
+            <div class="bar-row"><div class="bar-label">Tier II</div><div class="bar-track"><div class="bar-fill hot" style="width:55%;"></div></div><div class="bar-value">1.2×</div></div>
+            <div class="bar-row"><div class="bar-label">Tier III ★</div><div class="bar-track"><div class="bar-fill" style="width:68%;"></div></div><div class="bar-value">1.5×</div></div>
+            <div class="bar-row"><div class="bar-label">Tier IV — 2N total</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,var(--violet),var(--magenta));"></div></div><div class="bar-value">2.2×</div></div>
+          </div>
+          <p style="font-size:0.75rem;color:var(--ink-dim);margin-top:16px;line-height:1.5;">
+            Índices típicos de industria (benchmarks según Uptime Institute).
+            Tier IV duplica toda la infraestructura (2N).
+          </p>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip ok">99.98% cumple los SLA de banca y Estado provincial</div>
+        <div class="chip warn">Tier IV: ≈ +50% CAPEX por +0.01 pp de disponibilidad</div>
+        <div class="chip">Tier III captura el 99.7% de la reducción de downtime a ~2/3 del costo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOQUE 2 · LA EMPRESA (min 5-7) ============ -->
+
+  <!-- 8 · LA EMPRESA -->
+  <section class="slide">
+    <div class="slide-meta">06 · La empresa</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">NodoSur Cloud S.A.</span>
+      <h2 class="display" data-anim="up">PYME de infraestructura TI<br/>en etapa de diseño ejecutivo.</h2>
+      <div class="grid cols-4">
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Plantilla</div>
+          <div class="stat-value"><span data-count="18">0</span></div>
+          <div class="stat-sub">Operaciones, mantenimiento y seguridad física · turnos 24/7</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Emplazamiento</div>
+          <div class="stat-value" style="font-size:1.5rem;">Parque Industrial Pilar</div>
+          <div class="stat-sub">Zonificación industrial · jurisdicción: Nación + PBA + Municipio</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Mercado objetivo</div>
+          <div class="stat-value" style="font-size:1.5rem;">B2B regulado</div>
+          <div class="stat-sub">Empresas medianas tech, Estado bonaerense y banca regional</div>
+        </div>
+        <div class="glass stat" data-anim="pop">
+          <div class="stat-label">Hitos</div>
+          <div class="stat-value"><span class="accent">2027</span></div>
+          <div class="stat-sub">Inicio de obra civil · operación bajo SGI desde el día uno</div>
+        </div>
+      </div>
+      <div class="chips" data-anim="up">
+        <div class="chip">Ventaja: el SGI se implementa desde la construcción, no se adapta después</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · PROCESO PRODUCTIVO -->
+  <section class="slide">
+    <div class="slide-meta">07 · Proceso productivo</div>
+    <div class="container">
+      <span class="eyebrow" data-anim="up">Entradas → operación → salidas</span>
+      <h2 class="display" data-anim="up">El proceso define<br/>los residuos.</h2>
+      <div class="grid cols-3">
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Insumos</div>
+          <div class="phase-title">Entradas</div>
+          <ul>
+            <li>Energía eléctrica de red · gasoil de respaldo</li>
+            <li>Agua para enfriamiento evaporativo + biocidas de torre</li>
+            <li>Refrigerantes HFC para climatización de precisión</li>
+            <li>Equipamiento TI, baterías (plomo-ácido / LFP), aceites y filtros</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Actividades</div>
+          <div class="phase-title">Operación 24/7</div>
+          <ul>
+            <li>Operación de infraestructura eléctrica, térmica y de red</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+            <li>Pruebas mensuales de generadores</li>
+            <li>Instalación de equipos de clientes · control de acceso</li>
+          </ul>
+        </div>
+        <div class="glass phase" data-anim="pop">
+          <div class="phase-tag">Salidas</div>
+          <div class="phase-title">Servicios + residuos</div>
+          <ul>
+            <li>Housing · colocation · cloud privado</li>
+            <li>Peligrosos: baterías, HFC recuperados, aceites, filtros</li>
+            <li>RAEE: servidores, switches, cableado de baja</li>
+            <li>RSU + efluentes de purga de torres (con biocidas)</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4 · MATRIZ DE RIESGOS -->
+  <!-- ============ BLOQUE 3 · RIESGOS Y ERGONOMÍA (min 7-9) ============ -->
+
+  <!-- 10 · MATRIZ DE RIESGOS -->
   <section class="slide">
-    <div class="slide-meta">03 · Riesgos laborales</div>
+    <div class="slide-meta">08 · Riesgos laborales</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Matriz probabilidad × severidad</span>
-      <h2 class="display" data-anim="up">Cinco riesgos ALTOS<br/>conviven en la sala.</h2>
+      <span class="eyebrow" data-anim="up">Matriz probabilidad × severidad (escala 1–3)</span>
+      <h2 class="display" data-anim="up">Cinco riesgos nivel 6<br/>requieren control inmediato.</h2>
       <div class="risk-matrix-wrap">
         <div data-anim="left">
           <div style="display:flex;gap:10px;align-items:center;">
@@ -116,42 +331,42 @@
           </div>
         </div>
         <div class="risk-list">
-          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Arco eléctrico / contacto directo</span><span class="risk-score" style="color:var(--red);">6</span></div>
-          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Energización accidental (LOTO)</span><span class="risk-score" style="color:var(--red);">6</span></div>
-          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Vuelco de rack en traslado</span><span class="risk-score" style="color:var(--red);">6</span></div>
-          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Lesión lumbar por carga manual</span><span class="risk-score" style="color:var(--red);">6</span></div>
-          <div class="glass risk-item" data-anim="right"><span class="badge crit">Alto</span><span class="risk-name">Daño auditivo crónico &gt;85 dB</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Arco eléctrico / contacto directo — tableros BT/MT, UPS, PDU</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Energización accidental durante mantenimiento (LOTO)</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">P2·S3</span><span class="risk-name">Vuelco de rack durante traslado (500–1.500 kg)</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">P3·S2</span><span class="risk-name">Lesión lumbar por carga manual de equipos</span><span class="risk-score" style="color:var(--red);">6</span></div>
+          <div class="glass risk-item" data-anim="right"><span class="badge crit">P3·S2</span><span class="risk-name">Daño auditivo crónico — sala &gt;85 dB(A)</span><span class="risk-score" style="color:var(--red);">6</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5 · REBA TAREA 1 -->
+  <!-- 11 · REBA TAREA 1 -->
   <section class="slide">
-    <div class="slide-meta">04 · Ergonomía — método REBA</div>
+    <div class="slide-meta">09 · Ergonomía · método REBA</div>
     <div class="container">
       <div class="two-col">
         <div>
-          <span class="eyebrow" data-anim="left">Tarea 1 · Instalación en rack</span>
-          <h2 class="display" data-anim="left">22 kg a la altura<br/>del pecho.</h2>
+          <span class="eyebrow" data-anim="left">Tarea 1 · Instalación de servidor 2U en rack</span>
+          <h2 class="display" data-anim="left">22 kg sin ayuda<br/>mecánica.</h2>
           <p class="lead" style="margin-top:18px;" data-anim="left">
-            Levantar un servidor 2U desde el suelo, sostenerlo e insertarlo en
-            rieles sin ayuda mecánica. REBA lo clasifica riesgo
-            <strong style="color:var(--red);">muy alto — acción inmediata</strong>.
+            Levantar desde el suelo, sostener a la altura del pecho, insertar en rieles y
+            atornillar. REBA arroja <strong style="color:var(--red);">riesgo muy alto —
+            acción inmediata</strong>: carga &gt;10 kg sostenida con postura forzada &gt;30 s.
           </p>
           <div class="chips" data-anim="left">
-            <div class="chip danger">Flexión de tronco &gt;60°</div>
-            <div class="chip danger">Hombros &gt;90°</div>
-            <div class="chip warn">Agarre sin asa</div>
+            <div class="chip danger">Flexión de tronco &gt;60° + torsión</div>
+            <div class="chip danger">Hombros &gt;90° en posiciones altas</div>
+            <div class="chip warn">Agarre en pinza, sin asa</div>
           </div>
         </div>
         <div class="glass" style="padding:32px;" data-anim="right">
           <div class="reba-scale">
-            <div class="reba-row"><div class="reba-part">Tronco</div><div class="reba-desc">Flexión &gt;60° + torsión</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
-            <div class="reba-row"><div class="reba-part">Hombros</div><div class="reba-desc">Elevación &gt;90°</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
-            <div class="reba-row"><div class="reba-part">Cuello</div><div class="reba-desc">Extensión al mirar arriba</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
-            <div class="reba-row"><div class="reba-part">Muñecas</div><div class="reba-desc">Desviación + torsión</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
-            <div class="reba-row"><div class="reba-part">Piernas</div><div class="reba-desc">Base inestable</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Tronco</div><div class="reba-desc">Flexión &gt;60° + torsión lateral</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Hombros</div><div class="reba-desc">Elevación &gt;90° al insertar alto</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Cuello</div><div class="reba-desc">Extensión al mirar hacia arriba</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Muñecas</div><div class="reba-desc">Desviación + torsión en atornillado</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
+            <div class="reba-row"><div class="reba-part">Piernas</div><div class="reba-desc">De pie, base inestable</div><div class="reba-dots"><span class="reba-dot on-2"></span><span class="reba-dot on-2"></span><span class="reba-dot"></span></div></div>
             <div class="reba-row"><div class="reba-part">Carga</div><div class="reba-desc">22 kg sin ayuda mecánica</div><div class="reba-dots"><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span><span class="reba-dot on-3"></span></div></div>
           </div>
         </div>
@@ -159,121 +374,121 @@
     </div>
   </section>
 
-  <!-- 6 · REBA TAREAS 2 Y 3 -->
+  <!-- 12 · REBA TAREAS 2 Y 3 -->
   <section class="slide">
-    <div class="slide-meta">05 · Ergonomía — método REBA</div>
+    <div class="slide-meta">10 · Ergonomía · método REBA</div>
     <div class="container">
       <span class="eyebrow" data-anim="up">Tareas 2 y 3</span>
-      <h2 class="display" data-anim="up">Bajo el piso<br/>y frente a las pantallas.</h2>
+      <h2 class="display" data-anim="up">Espacio confinado<br/>y carga mental.</h2>
       <div class="grid cols-2">
         <div class="glass phase" data-anim="left">
           <div class="phase-tag">Tarea 2 · Cableado bajo piso técnico</div>
-          <div class="phase-title">40–60 cm de altura · 15 a 40 min</div>
+          <div class="phase-title">Altura 40–60 cm · períodos de 15–40 min</div>
           <ul>
-            <li>Rodillas en flexión extrema sostenida &gt;135° — REBA 3, muy alto</li>
-            <li>Tronco flexionado &gt;60° en espacio confinado — REBA 3</li>
-            <li>Cuello en flexión forzada hacia abajo — REBA 2</li>
-            <li>Movimientos repetitivos de muñecas en tendido — REBA 2</li>
+            <li>Rodillas: flexión extrema sostenida &gt;135° — REBA 3, muy alto</li>
+            <li>Tronco: flexión &gt;60° en espacio confinado — REBA 3, muy alto</li>
+            <li>Cuello: flexión forzada por altura insuficiente — REBA 2</li>
+            <li>Muñecas: movimientos repetitivos en tendido — REBA 2</li>
           </ul>
         </div>
         <div class="glass phase" data-anim="right">
-          <div class="phase-tag">Tarea 3 · Guardia nocturna</div>
-          <div class="phase-title">&gt;6 h sedente · alerta permanente</div>
+          <div class="phase-tag">Tarea 3 · Guardia nocturna de monitoreo</div>
+          <div class="phase-title">Sedente &gt;6 h · vigilancia sostenida</div>
           <ul>
-            <li>Postura sedente sostenida sin pausas regulares — riesgo alto</li>
-            <li>Carga mental alta por vigilancia de múltiples sistemas — alto</li>
+            <li>Postura sedente prolongada sin variación — riesgo alto</li>
+            <li>Carga mental por gestión de alertas múltiples — alto</li>
             <li>Ciclo circadiano alterado por rotación de turnos — alto</li>
-            <li>Pantallas sin regulación de altura ni distancia — medio</li>
+            <li>Pantallas sin regulación de altura/distancia — medio</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7 · MEDIDAS CORRECTIVAS -->
+  <!-- 13 · CONTROLES ERGONÓMICOS -->
   <section class="slide">
-    <div class="slide-meta">06 · Ergonomía — correcciones</div>
+    <div class="slide-meta">11 · Ergonomía · controles</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Propuesta de medidas</span>
+      <span class="eyebrow" data-anim="up">Jerarquía de control</span>
       <h2 class="display" data-anim="up">Ingeniería primero,<br/>administración después.</h2>
       <div class="grid cols-2">
         <div class="glass phase" data-anim="left">
           <div class="phase-num">⚙</div>
-          <div class="phase-title">Medidas de ingeniería</div>
+          <div class="phase-title">Controles de ingeniería</div>
           <ul>
-            <li>Elevador de rack obligatorio para equipos &gt;15 kg</li>
+            <li>Elevador de rack mecánico/hidráulico obligatorio &gt;15 kg</li>
             <li>Rodilleras de gel + carro porta-herramientas bajo piso</li>
-            <li>Consola ergonómica de triple pantalla, regulable, a 70 cm</li>
-            <li>Protección auditiva en sala de servidores</li>
+            <li>Consola de triple pantalla regulable a 70 cm</li>
+            <li>Protección auditiva NRR ≥ 25 dB en sala</li>
           </ul>
         </div>
         <div class="glass phase" data-anim="right">
           <div class="phase-num">🕐</div>
-          <div class="phase-title">Medidas administrativas</div>
+          <div class="phase-title">Controles administrativos</div>
           <ul>
-            <li>Límite de 15 minutos bajo piso técnico con rotación</li>
-            <li>Pausas activas cada 2 horas en guardia — 10 min de movilidad</li>
+            <li>Máximo 15 min bajo piso técnico, con rotación obligatoria</li>
+            <li>Pausas activas cada 2 h en guardia (10 min de movilidad)</li>
             <li>Mínimo 7 días en el mismo horario antes de rotar turno</li>
-            <li>Elongación de muñecas al inicio de turno para cableadores</li>
+            <li>Elongación de muñecas al inicio de turno (cableadores)</li>
           </ul>
         </div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip ok">Meta: índice REBA post-medida ≤ 4</div>
-        <div class="chip ok">Inversión: USD 3.500 (elevador)</div>
+        <div class="chip ok">KPI: índice REBA post-medida ≤ 4</div>
+        <div class="chip ok">Inversión: USD 3.500 · plazo: mes −1 (pre-puesta en marcha)</div>
       </div>
     </div>
   </section>
 
-  <!-- 8 · FUEGO -->
+  <!-- ============ BLOQUE 4 · INCENDIOS Y EMERGENCIA (min 9-11) ============ -->
+
+  <!-- 14 · INCENDIOS -->
   <section class="slide">
-    <div class="slide-meta">07 · Seguridad industrial</div>
+    <div class="slide-meta">12 · Seguridad industrial</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Clases de fuego presentes</span>
-      <h2 class="display" data-anim="up">Cuatro fuegos distintos,<br/>un mismo edificio.</h2>
+      <span class="eyebrow" data-anim="up">Carga de fuego heterogénea → protección por zona</span>
+      <h2 class="display" data-anim="up">Cuatro clases de fuego,<br/>cuatro agentes distintos.</h2>
       <div class="grid cols-4">
         <div class="glass fire-card" data-anim="pop">
           <div class="fire-class" style="color:var(--amber);">A</div>
           <div class="f-what">Sólidos carbonosos</div>
-          <div class="f-ext">Plásticos, cartón, cables → agua pulverizada</div>
+          <div class="f-ext">Plásticos, cartón, aislaciones PVC → agua pulverizada</div>
         </div>
         <div class="glass fire-card" data-anim="pop">
           <div class="fire-class" style="color:var(--orange);">B</div>
           <div class="f-what">Líquidos inflamables</div>
-          <div class="f-ext">Gasoil y aceites → polvo ABC / espuma AFFF</div>
+          <div class="f-ext">Gasoil en tanque y líneas, aceites → polvo ABC / espuma AFFF</div>
         </div>
         <div class="glass fire-card" data-anim="pop">
           <div class="fire-class" style="color:var(--blue);">C</div>
           <div class="f-what">Eléctrico energizado</div>
-          <div class="f-ext">Sala de servidores → CO₂ / Novec 1230</div>
+          <div class="f-ext">Sala de servidores y tableros → CO₂ / Novec 1230 (no conductor)</div>
         </div>
         <div class="glass fire-card" data-anim="pop">
           <div class="fire-class" style="color:var(--magenta);">D</div>
           <div class="f-what">Metales combustibles</div>
-          <div class="f-ext">Litio en baterías LFP → arena seca / agente D</div>
+          <div class="f-ext">Litio en baterías LFP dañadas → arena seca / agente clase D</div>
         </div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip">Sala servidores: Novec 1230 automático</div>
-        <div class="chip">Generadores: espuma AFFF</div>
-        <div class="chip">Sala eléctrica: FM-200</div>
-        <div class="chip">Oficinas: sprinklers</div>
+        <div class="chip">Servidores: Novec 1230 automático + CO₂ 5 kg / 100 m²</div>
+        <div class="chip">Generadores: AFFF + polvo ABC 10 kg</div>
+        <div class="chip">Sala eléctrica: FM-200 + CO₂ 5 kg</div>
+        <div class="chip">Oficinas: sprinklers + ABC 5 kg</div>
       </div>
     </div>
   </section>
 
-  <!-- 9 · CROQUIS DE EVACUACIÓN -->
+  <!-- 15 · PLAN DE EMERGENCIA + CROQUIS -->
   <section class="slide">
-    <div class="slide-meta">08 · Plan de emergencia</div>
+    <div class="slide-meta">13 · Plan de emergencia</div>
     <div class="container">
       <span class="eyebrow" data-anim="up">Croquis de evacuación · Planta NodoSur Cloud</span>
-      <h2 class="display" style="font-size:clamp(1.8rem,3.6vw,2.8rem);" data-anim="up">Dos salidas, un punto de encuentro.</h2>
+      <h2 class="display" style="font-size:clamp(1.8rem,3.6vw,2.8rem);" data-anim="up">Roles definidos, rutas señalizadas.</h2>
       <div class="glass croquis-wrap" data-anim="blur">
         <svg class="croquis-svg" viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croquis de evacuación de la planta">
-          <!-- Perímetro del edificio -->
           <rect class="room draw" x="60" y="40" width="640" height="380" rx="6" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/>
 
-          <!-- Salas -->
           <rect class="room office" x="75" y="55" width="200" height="130" rx="4"/>
           <text x="175" y="112" text-anchor="middle" font-size="14" font-weight="600">Oficinas</text>
           <text x="175" y="130" text-anchor="middle" font-size="11" opacity="0.7">Sala de control</text>
@@ -294,28 +509,23 @@
           <text x="175" y="342" text-anchor="middle" font-size="12" font-weight="600">Depósito residuos</text>
           <text x="175" y="358" text-anchor="middle" font-size="10" opacity="0.7">Peligrosos · RAEE</text>
 
-          <!-- Pasillo -->
           <text x="425" y="360" text-anchor="middle" font-size="11" opacity="0.55" letter-spacing="4">PASILLO CENTRAL</text>
 
-          <!-- Salidas -->
           <rect x="52" y="205" width="16" height="60" rx="3" fill="rgba(0,245,160,0.9)"/>
           <text x="30" y="240" text-anchor="middle" font-size="10" font-weight="700" transform="rotate(-90 30 240)" fill="#00f5a0">SALIDA 1</text>
           <rect x="692" y="360" width="16" height="55" rx="3" fill="rgba(0,245,160,0.9)"/>
           <text x="730" y="390" font-size="10" font-weight="700" fill="#00f5a0">SALIDA 2</text>
 
-          <!-- Rutas de escape animadas -->
           <path class="escape" d="M 175 190 L 175 235 L 80 235"/>
           <path class="escape" d="M 360 285 L 360 330 L 100 330 L 80 250"/>
           <path class="escape" d="M 500 285 L 500 385 L 690 385"/>
           <path class="escape" d="M 630 345 L 630 385 L 690 385"/>
 
-          <!-- Punto de encuentro -->
           <circle cx="810" cy="430" r="34" fill="rgba(0,245,160,0.14)" stroke="#00f5a0" stroke-width="2.5"/>
           <text x="810" y="426" text-anchor="middle" font-size="11" font-weight="700" fill="#00f5a0">PUNTO DE</text>
           <text x="810" y="441" text-anchor="middle" font-size="11" font-weight="700" fill="#00f5a0">ENCUENTRO</text>
           <path class="escape" d="M 710 388 L 772 415"/>
 
-          <!-- Extintores -->
           <g font-size="10">
             <circle cx="300" cy="290" r="7" fill="#ff4d6d"/><text x="300" y="312" text-anchor="middle" opacity="0.8">CO₂</text>
             <circle cx="550" cy="290" r="7" fill="#ff4d6d"/><text x="550" y="312" text-anchor="middle" opacity="0.8">CO₂</text>
@@ -323,11 +533,9 @@
             <circle cx="120" cy="200" r="7" fill="#ff4d6d"/><text x="120" y="222" text-anchor="middle" opacity="0.8">ABC</text>
           </g>
 
-          <!-- EPO -->
           <rect x="540" y="42" width="40" height="22" rx="4" fill="rgba(254,228,64,0.9)"/>
           <text x="560" y="57" text-anchor="middle" font-size="11" font-weight="800" fill="#111">EPO</text>
 
-          <!-- DEA / botiquín -->
           <rect x="240" y="230" width="26" height="26" rx="5" fill="rgba(255,255,255,0.92)"/>
           <path d="M 253 235 v 16 M 245 243 h 16" stroke="#ff4d6d" stroke-width="4"/>
           <text x="253" y="275" text-anchor="middle" font-size="10" opacity="0.8">DEA</text>
@@ -340,45 +548,46 @@
         </div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip">Señalización fotoluminiscente</div>
-        <div class="chip">Iluminación de emergencia &gt;90 min</div>
-        <div class="chip">Simulacros: 2 evacuaciones/año</div>
-        <div class="chip">1 persona RCP+DEA por turno</div>
+        <div class="chip">Pre-alarma → confirmar zona en panel → evacuar → ventilación confirmada → reingreso solo autorizado</div>
+        <div class="chip">Brigada: 2 personas/turno · 1 con RCP+DEA</div>
+        <div class="chip">Iluminación de emergencia &gt;90 min · simulacros 2×/año</div>
       </div>
     </div>
   </section>
 
-  <!-- 10 · MARCO LEGAL -->
+  <!-- ============ BLOQUE 5 · MARCO LEGAL Y SGA (min 11-13) ============ -->
+
+  <!-- 16 · MARCO LEGAL -->
   <section class="slide">
-    <div class="slide-meta">09 · Derecho ambiental</div>
+    <div class="slide-meta">14 · Derecho ambiental</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Tres niveles de exigencia</span>
-      <h2 class="display" data-anim="up">Nación, Provincia<br/>y Municipio de Pilar.</h2>
+      <span class="eyebrow" data-anim="up">Requisitos legales aplicables</span>
+      <h2 class="display" data-anim="up">Tres jurisdicciones,<br/>obligaciones concretas.</h2>
       <div class="grid cols-3">
         <div class="glass phase" data-anim="pop">
           <div class="phase-tag">Nacional</div>
           <div class="phase-title">Leyes marco</div>
           <ul>
-            <li><strong>Ley 25.675</strong> — General del Ambiente: exige EIA previa a la obra</li>
-            <li><strong>Ley 24.051</strong> — Residuos peligrosos: responsabilidad del generador</li>
-            <li><strong>Ley 19.587 + Dec. 351/79</strong> — Higiene y seguridad laboral</li>
-            <li><strong>Ley 27.520</strong> — Cambio climático: orienta el PPA solar</li>
+            <li><strong>Ley 25.675</strong> — EIA obligatoria previa a la construcción</li>
+            <li><strong>Ley 24.051 + Dec. 831/93</strong> — responsabilidad extendida del generador; manifiestos de transporte</li>
+            <li><strong>Ley 19.587 + Dec. 351/79</strong> — evaluación de riesgos, EPP, capacitación, exámenes anuales</li>
+            <li><strong>Ley 27.520</strong> — metas GEI: fundamenta el PPA renovable</li>
           </ul>
         </div>
         <div class="glass phase" data-anim="pop">
           <div class="phase-tag">Provincial · Buenos Aires</div>
           <div class="phase-title">Registros y servicios</div>
           <ul>
-            <li><strong>Ley 11.720</strong> — Residuos especiales: inscripción como generador ante OPDS</li>
-            <li><strong>Dec. 1338/96</strong> — Médico del Trabajo y Especialista en H&amp;S matriculados para los 18 empleados</li>
+            <li><strong>Ley 11.720</strong> — inscripción como generador de residuos especiales ante OPDS</li>
+            <li><strong>Dec. 1338/96</strong> — Médico del Trabajo + Especialista en H&amp;S matriculados (18 empleados)</li>
           </ul>
         </div>
         <div class="glass phase" data-anim="pop">
           <div class="phase-tag">Municipal · Pilar</div>
           <div class="phase-title">Habilitaciones</div>
           <ul>
-            <li>Habilitación de uso del suelo antes de la obra civil</li>
-            <li>Reglamento del Parque: ruido exterior ≤ <strong>55 dB(A)</strong> diurnos — verifica torres de enfriamiento</li>
+            <li>Uso del suelo <strong>antes</strong> de la obra civil</li>
+            <li>Reglamento del Parque: ruido exterior ≤ <strong>55 dB(A)</strong> diurno — verificación acústica de torres</li>
             <li>Habilitación comercial previa a la puesta en marcha</li>
           </ul>
         </div>
@@ -386,167 +595,146 @@
     </div>
   </section>
 
-  <!-- 11 · ASPECTOS E IMPACTOS -->
+  <!-- 17 · ASPECTOS E IMPACTOS -->
   <section class="slide">
-    <div class="slide-meta">10 · ISO 14001 — aspectos ambientales</div>
+    <div class="slide-meta">15 · ISO 14001 · cláusula 6.1.2</div>
     <div class="container">
       <div class="two-col">
         <div>
-          <span class="eyebrow" data-anim="left">Valoración P + S + A</span>
+          <span class="eyebrow" data-anim="left">Valoración P + S + A (alcance regulatorio)</span>
           <h2 class="display" data-anim="left">Siete aspectos<br/>significativos.</h2>
           <p class="lead" style="margin-top:18px;" data-anim="left">
-            Probabilidad + severidad + alcance regulatorio, escala 3–9.
-            Todo aspecto ≥7 requiere control operacional formal en el SGA.
+            Cada aspecto se puntúa 1–3 en probabilidad, severidad y alcance regulatorio;
+            total ≥ 7 = significativo → exige objetivo y control operacional formal
+            dentro del SGA.
           </p>
+          <div class="chips" data-anim="left">
+            <div class="chip">Metodología alineada a ISO 14001:2015</div>
+          </div>
         </div>
         <div class="glass" style="padding:32px;" data-anim="right">
           <div class="bars">
             <div class="bar-row"><div class="bar-label">E-waste / RAEE</div><div class="bar-track"><div class="bar-fill hot" style="width:100%;"></div></div><div class="bar-value">9</div></div>
-            <div class="bar-row"><div class="bar-label">Energía eléctrica (Scope 2)</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
-            <div class="bar-row"><div class="bar-label">Fugas de HFC</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
+            <div class="bar-row"><div class="bar-label">Energía de red (Scope 2)</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
+            <div class="bar-row"><div class="bar-label">Fugas de HFC (GWP 2.088)</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
             <div class="bar-row"><div class="bar-label">Baterías usadas</div><div class="bar-track"><div class="bar-fill hot" style="width:89%;"></div></div><div class="bar-value">8</div></div>
-            <div class="bar-row"><div class="bar-label">Consumo de agua</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
-            <div class="bar-row"><div class="bar-label">Efluentes de torres</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
-            <div class="bar-row"><div class="bar-label">Derrame de combustible</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+            <div class="bar-row"><div class="bar-label">Agua de torres</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+            <div class="bar-row"><div class="bar-label">Efluentes con biocidas</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
+            <div class="bar-row"><div class="bar-label">Derrame de gasoil (emergencia)</div><div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div><div class="bar-value">7</div></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 12 · POLÍTICA INTEGRADA -->
+  <!-- 18 · RESIDUOS -->
   <section class="slide">
-    <div class="slide-meta">11 · Política integrada</div>
+    <div class="slide-meta">16 · Gestión de residuos</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Una sola política, firmada por Dirección</span>
-      <h2 class="display" data-anim="up">Cuatro compromisos.</h2>
-      <div class="grid cols-4">
-        <div class="glass phase" data-anim="pop">
-          <div class="phase-num">🌱</div>
-          <div class="phase-title">Ambiental</div>
-          <ul><li>Prevenir la contaminación, minimizar energía y agua</li><li>Certificar ISO 14001:2015 en 2028</li></ul>
-        </div>
-        <div class="glass phase" data-anim="pop">
-          <div class="phase-num">🦺</div>
-          <div class="phase-title">SSO</div>
-          <ul><li>Controlar riesgo eléctrico, cargas, ruido y estrés térmico</li><li>Objetivo: cero accidentes</li></ul>
-        </div>
-        <div class="glass phase" data-anim="pop">
-          <div class="phase-num">⚖️</div>
-          <div class="phase-title">Legal</div>
-          <ul><li>Cumplir requisitos nacionales, provinciales y municipales</li></ul>
-        </div>
-        <div class="glass phase" data-anim="pop">
-          <div class="phase-num">🔄</div>
-          <div class="phase-title">Mejora continua</div>
-          <ul><li>Objetivos medibles, KPIs y revisión anual con la Alta Dirección</li></ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13 · RESIDUOS — 5 CORRIENTES -->
-  <section class="slide">
-    <div class="slide-meta">12 · Gestión de residuos</div>
-    <div class="container">
-      <span class="eyebrow" data-anim="up">Segregación en origen</span>
-      <h2 class="display" data-anim="up">Cinco corrientes,<br/>cinco colores.</h2>
+      <span class="eyebrow" data-anim="up">Segregación en origen + cadena de custodia</span>
+      <h2 class="display" data-anim="up">Cinco corrientes,<br/>trazabilidad documental.</h2>
       <div class="grid cols-5">
         <div class="glass waste-stream" style="border-color:#ff4d6d;" data-anim="pop">
           <div class="ws-icon">🔋</div>
           <div class="ws-name" style="color:#ff8fa5;">Peligrosos</div>
-          <div class="ws-what">Baterías, aceites, filtros, refrigerantes · depósito exclusivo, máx. 90 días</div>
+          <div class="ws-what">Baterías (500–800 kg/reemplazo), aceites (40–80 L/servicio), filtros, HFC</div>
         </div>
         <div class="glass waste-stream" style="border-color:#ff6b35;" data-anim="pop">
           <div class="ws-icon">💻</div>
           <div class="ws-name" style="color:#ffb894;">RAEE</div>
-          <div class="ws-what">Equipos TI de baja + cableado · gestor con certificación R2</div>
+          <div class="ws-what">15–20 servidores/año + cableado · gestor R2 con borrado NIST 800-88</div>
         </div>
         <div class="glass waste-stream" style="border-color:#fee440;" data-anim="pop">
           <div class="ws-icon">📦</div>
           <div class="ws-name" style="color:#ffefa3;">Reciclables</div>
-          <div class="ws-what">Cartón, plástico limpio, papel de oficinas</div>
+          <div class="ws-what">Embalajes: 200–400 kg/año de cartón y plástico limpio</div>
         </div>
         <div class="glass waste-stream" style="border-color:#00f5a0;" data-anim="pop">
           <div class="ws-icon">🍎</div>
           <div class="ws-name" style="color:#9df5d3;">Orgánicos</div>
-          <div class="ws-what">Restos de comida y papel sucio de cocina</div>
+          <div class="ws-what">Restos de cocina y papel sucio del área de personal</div>
         </div>
         <div class="glass waste-stream" style="border-color:#8b93a7;" data-anim="pop">
           <div class="ws-icon">🗑️</div>
           <div class="ws-name" style="color:#c5cad6;">Generales</div>
-          <div class="ws-what">Lo que no tiene otra corriente asignada</div>
+          <div class="ws-what">Sin corriente asignada → relleno sanitario</div>
         </div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip">Manifiesto en cada retiro (Dec. 831/93)</div>
-        <div class="chip">Certificados archivados 5 años</div>
-        <div class="chip">Contención secundaria 110%</div>
+        <div class="chip danger">Depósito: contención 110% + sensor H₂ + máx. 90 días (Dec. 831/93)</div>
+        <div class="chip">Manifiesto por retiro · certificados archivados 5 años</div>
+        <div class="chip">Gestor con habilitación OPDS · auditoría anual</div>
       </div>
     </div>
   </section>
 
-  <!-- 14 · ECONOMÍA CIRCULAR -->
+  <!-- 19 · ECONOMÍA CIRCULAR -->
   <section class="slide">
-    <div class="slide-meta">13 · Economía circular</div>
+    <div class="slide-meta">17 · Economía circular</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Jerarquía de gestión</span>
+      <span class="eyebrow" data-anim="up">Jerarquía de gestión de activos TI</span>
       <h2 class="display" data-anim="up">Reciclar es la última<br/>opción, no la primera.</h2>
       <div class="grid cols-5">
-        <div class="glass phase" data-anim="pop"><div class="phase-num">1</div><div class="phase-title">Reducir</div><ul><li>No sobredimensionar; caza trimestral de servidores zombies</li></ul></div>
-        <div class="glass phase" data-anim="pop"><div class="phase-num">2</div><div class="phase-title">Reutilizar</div><ul><li>Producción → staging → desarrollo: +2 años de vida útil</li></ul></div>
-        <div class="glass phase" data-anim="pop"><div class="phase-num">3</div><div class="phase-title">Reparar</div><ul><li>Fuentes, ventiladores y discos antes que el equipo entero</li></ul></div>
-        <div class="glass phase" data-anim="pop"><div class="phase-num">4</div><div class="phase-title">Banco de partes</div><ul><li>RAM, SSD y NICs catalogadas: USD 200–500 por equipo</li></ul></div>
-        <div class="glass phase" data-anim="pop"><div class="phase-num">5</div><div class="phase-title">Reciclar</div><ul><li>Gestor R2 con borrado NIST 800-88 previo</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">1</div><div class="phase-title">Reducir</div><ul><li>Sin sobredimensionar · auditoría trimestral de servidores zombies</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">2</div><div class="phase-title">Reutilizar</div><ul><li>Producción → staging → desarrollo: vida útil de 4 a 6 años</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">3</div><div class="phase-title">Reparar</div><ul><li>Fuentes, ventiladores y discos antes que el equipo completo</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">4</div><div class="phase-title">Banco de componentes</div><ul><li>RAM, SSD, NIC catalogados: USD 200–500 recuperados por baja</li></ul></div>
+        <div class="glass phase" data-anim="pop"><div class="phase-num">5</div><div class="phase-title">Reciclaje certificado</div><ul><li>Solo lo no reutilizable, con trazabilidad completa</li></ul></div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip ok">Desvío de relleno ≥50% año 1</div>
-        <div class="chip ok">RAEE a reúso ≥40%</div>
-        <div class="chip ok">Trazabilidad 100%</div>
+        <div class="chip ok">Desvío de relleno ≥ 50% (año 1)</div>
+        <div class="chip ok">RAEE a reúso ≥ 40%</div>
+        <div class="chip ok">Vida útil promedio ≥ 5 años</div>
+        <div class="chip ok">Trazabilidad documental 100%</div>
       </div>
     </div>
   </section>
 
-  <!-- 15 · OBJETIVOS SMART -->
+  <!-- ============ BLOQUE 6 · SGI Y MEJORA CONTINUA (min 13-15) ============ -->
+
+  <!-- 20 · OBJETIVOS SMART + PROGRAMAS -->
   <section class="slide">
-    <div class="slide-meta">14 · Objetivos SMART</div>
+    <div class="slide-meta">18 · Objetivos y programas</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Medibles, con plazo y responsable</span>
-      <h2 class="display" data-anim="up">Cuatro objetivos<br/>del sistema.</h2>
+      <span class="eyebrow" data-anim="up">Objetivos SMART con programa, responsable y presupuesto</span>
+      <h2 class="display" data-anim="up">Cuatro objetivos<br/>medibles.</h2>
       <div class="grid cols-4">
         <div class="glass stat" data-anim="pop">
           <div class="stat-label">Energía</div>
           <div class="stat-value">PUE 1.80 → <span class="accent">1.53</span></div>
-          <div class="stat-sub">−15% en 36 meses · ~USD 140k/año de ahorro (500 kW)</div>
+          <div class="stat-sub">−15% en 36 meses · la energía es el 70% del OPEX · ≈ USD 140k/año de ahorro (500 kW)</div>
         </div>
         <div class="glass stat" data-anim="pop">
           <div class="stat-label">Residuos</div>
           <div class="stat-value"><span class="accent" data-count="100" data-suffix="%">0</span></div>
-          <div class="stat-sub">Trazabilidad de peligrosos y RAEE desde el mes 1</div>
+          <div class="stat-sub">Retiros con manifiesto + certificado archivado, desde el mes 1 de operación</div>
         </div>
         <div class="glass stat" data-anim="pop">
           <div class="stat-label">Seguridad</div>
           <div class="stat-value">IF = <span class="accent">0</span></div>
-          <div class="stat-sub">Cero accidentes con días perdidos en el primer año</div>
+          <div class="stat-sub">Índice de frecuencia = 0 en año 1 · ≤ 2 en años siguientes · revisión semestral</div>
         </div>
         <div class="glass stat" data-anim="pop">
           <div class="stat-label">Certificación</div>
           <div class="stat-value"><span class="accent">ISO 14001</span></div>
-          <div class="stat-sub">Antes del 31/12/2028 · cero no conformidades mayores</div>
+          <div class="stat-sub">Antes del 31/12/2028 · cero no conformidades mayores en auditoría</div>
         </div>
       </div>
       <div class="chips" data-anim="up">
-        <div class="chip">Programas con responsable, recursos y plazo</div>
-        <div class="chip">KPIs mensuales: PUE · WUE · IF · desvío de residuos</div>
+        <div class="chip">DCIM + medición PUE: USD 8.000</div>
+        <div class="chip">Depósito de residuos: USD 3.000</div>
+        <div class="chip">Kits LOTO + capacitación: USD 1.500</div>
+        <div class="chip">Elevador de rack: USD 3.500</div>
+        <div class="chip">Consultoría + certificación ISO: USD 25.000</div>
       </div>
     </div>
   </section>
 
-  <!-- 16 · PHVA -->
+  <!-- 21 · PHVA -->
   <section class="slide">
-    <div class="slide-meta">15 · Mejora continua</div>
+    <div class="slide-meta">19 · Mejora continua</div>
     <div class="container">
-      <span class="eyebrow" data-anim="up">Ciclo PHVA aplicado</span>
+      <span class="eyebrow" data-anim="up">Ciclo PHVA — con frecuencia y responsable por fase</span>
       <h2 class="display" data-anim="up">El motor del sistema.</h2>
       <div class="phva-wrap">
         <div class="phva-ring" data-anim="pop">
@@ -559,22 +747,22 @@
           </svg>
         </div>
         <div class="phva-items">
-          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--cyan);">P</span><div><div class="pi-t">Planificar — anual, enero</div><div class="pi-d">Política, objetivos SMART, programas y aspectos significativos. Dirección + Resp. Ambiental.</div></div></div>
-          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--blue);">H</span><div><div class="pi-t">Hacer — continuo</div><div class="pi-d">Controles operacionales, capacitación, mantenimiento, simulacros, auditoría de gestores.</div></div></div>
-          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--violet);">V</span><div><div class="pi-t">Verificar — mensual + semestral</div><div class="pi-d">KPIs mensuales, auditoría interna semestral, cumplimiento legal y accidentabilidad.</div></div></div>
-          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--magenta);">A</span><div><div class="pi-t">Actuar — ante desvíos + diciembre</div><div class="pi-d">Acciones correctivas con fecha y responsable. Revisión anual por Dirección documentada.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--cyan);">P</span><div><div class="pi-t">Planificar — anual (enero) · Dirección + Resp. Ambiental</div><div class="pi-d">Actualización de política, objetivos SMART, programas y registro de aspectos ante cambios normativos, tecnológicos o de escala.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--blue);">H</span><div><div class="pi-t">Hacer — continuo · Jefes de área + Resp. H&amp;S</div><div class="pi-d">Controles operacionales, capacitación, mantenimiento preventivo, simulacros y auditoría de gestores de residuos.</div></div></div>
+          <div class="phva-item glass" data-anim="right"><span class="phva-letter" style="color:var(--violet);">V</span><div><div class="pi-t">Verificar — KPIs mensuales + auditoría interna semestral</div><div class="pi-d">Medición de indicadores, cumplimiento legal y accidentabilidad. Identificación de no conformidades.</div></div></div>
+          <div class="glass phva-item" data-anim="right"><span class="phva-letter" style="color:var(--magenta);">A</span><div><div class="pi-t">Actuar — ante cada desvío + revisión anual (diciembre)</div><div class="pi-d">Acciones correctivas con fecha de cierre y responsable. Revisión por la Dirección con decisiones documentadas.</div></div></div>
         </div>
       </div>
       <div class="glass" style="padding:22px 28px;margin-top:22px;border-color:rgba(0,245,160,0.4);" data-anim="up">
         <strong style="color:var(--green);">Mejora propuesta para el próximo ciclo →</strong>
-        <span style="color:var(--ink-soft);"> incorporar free-cooling con pre-enfriamiento adiabático en la Fase 2 y un scheduler con IA que module la refrigeración en tiempo real según carga térmica y precio de la energía.</span>
+        <span style="color:var(--ink-soft);"> free-cooling con pre-enfriamiento adiabático (Fase 2) + scheduler con IA que module la refrigeración en tiempo real según carga térmica y tarifa eléctrica horaria.</span>
       </div>
     </div>
   </section>
 
-  <!-- 17 · SGI -->
+  <!-- 22 · SGI -->
   <section class="slide">
-    <div class="slide-meta">16 · Gestión integrada</div>
+    <div class="slide-meta">20 · Gestión integrada</div>
     <div class="container center">
       <span class="eyebrow" data-anim="up">Sistema de Gestión Integrado</span>
       <h2 class="display" data-anim="up">Un sistema, tres lentes.</h2>
@@ -584,37 +772,38 @@
           <circle cx="300" cy="140" r="105" fill="#9b5de5" stroke="#9b5de5"/>
           <circle cx="240" cy="215" r="105" fill="#f15bb5" stroke="#f15bb5"/>
           <text x="140" y="105" text-anchor="middle" font-size="16">SGA</text>
-          <text x="140" y="124" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">ISO 14001</text>
+          <text x="140" y="124" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">ISO 14001:2015</text>
           <text x="342" y="105" text-anchor="middle" font-size="16">SHI</text>
           <text x="342" y="124" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">Ley 19.587 · ISO 45001</text>
           <text x="240" y="290" text-anchor="middle" font-size="16">Ergonomía</text>
-          <text x="240" y="308" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">SRT 592/04 · REBA</text>
+          <text x="240" y="308" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.75)" font-family="Inter" font-weight="500">Res. SRT 592/04 · REBA</text>
           <text x="240" y="172" text-anchor="middle" font-size="13" fill="#fff">SGI</text>
         </svg>
       </div>
       <div class="chips" style="justify-content:center;" data-anim="up">
-        <div class="chip">Una política</div>
-        <div class="chip">Un ciclo PHVA</div>
-        <div class="chip">Registros unificados</div>
-        <div class="chip">Una revisión anual 360°</div>
+        <div class="chip">Una política firmada por Dirección</div>
+        <div class="chip">Un ciclo PHVA compartido</div>
+        <div class="chip">Registro documental unificado</div>
+        <div class="chip">Revisión anual 360°</div>
         <div class="chip">Auditoría interna integrada</div>
         <div class="chip">Un responsable del SGI</div>
       </div>
       <p class="lead" style="margin:26px auto 0;" data-anim="up">
-        Un derrame de aceite activa a la vez la respuesta de emergencia,
-        el registro de incidente ambiental y la revisión ergonómica del procedimiento.
+        Un derrame de aceite activa a la vez la respuesta de emergencia (SHI), el registro
+        de incidente ambiental (SGA) y la revisión ergonómica del procedimiento que lo causó.
       </p>
     </div>
   </section>
 
-  <!-- 18 · CIERRE -->
+  <!-- 23 · CIERRE -->
   <section class="slide">
     <div class="container center">
       <span class="eyebrow" data-anim="blur">Síntesis</span>
       <h1 class="display xl" data-anim="blur">No son tres sistemas.<br/>Es uno solo.</h1>
-      <p class="lead" style="margin:36px auto 0;max-width:660px;" data-anim="up">
-        Menos carga administrativa, cero duplicaciones y visión de 360° —
-        del riesgo eléctrico al e-waste, del REBA al PUE.
+      <p class="lead" style="margin:36px auto 0;max-width:680px;" data-anim="up">
+        Menos carga administrativa, cero duplicaciones, visión de 360° —
+        del arco eléctrico al e-waste, del REBA al PUE. Implementado desde
+        la construcción, certificable en 2028.
       </p>
       <p class="subtitle" style="margin-top:44px;" data-anim="up">NodoSur Cloud S.A. · Pilar · 2026</p>
     </div>
@@ -627,7 +816,7 @@
 <nav class="nav">
   <button class="nav-btn" id="prevBtn" aria-label="Anterior">‹</button>
   <div class="dots" id="dots"></div>
-  <div class="counter" id="counter">1 / 18</div>
+  <div class="counter" id="counter">1 / 22</div>
   <button class="nav-btn" id="nextBtn" aria-label="Siguiente">›</button>
 </nav>
 
