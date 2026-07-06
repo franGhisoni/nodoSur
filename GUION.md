@@ -144,8 +144,8 @@
 
 →
 
-### Slide 21 · SGI (30 s)
-> Y acá se une todo: no implementamos tres sistemas, implementamos uno con tres lentes. Una sola política firmada por la Dirección, un solo ciclo PHVA, registros unificados, una revisión anual de 360 grados y un único responsable. Un ejemplo concreto: un derrame de aceite dispara a la vez la respuesta de emergencia, el registro de incidente ambiental y la revisión ergonómica del procedimiento que lo causó. Tres normas, un solo reflejo.
+### Slide 21 · SGI (35 s)
+> Y acá se une todo: no implementamos tres sistemas, implementamos uno con tres lentes. Una sola política firmada por la Dirección, un solo ciclo PHVA, registros unificados, una revisión anual de 360 grados y un único responsable. El mejor ejemplo es una tarea que hacemos cada 4 a 6 años: el recambio de baterías del UPS. Seguridad la gobierna con LOTO y verificación de tensión — porque un UPS sigue energizado aunque cortes la entrada. Ergonomía la gobierna con el elevador de rack — cada batería supera los 15 kilos. Y Ambiental la cierra con el manifiesto de transporte — son 500 a 800 kilos de residuo peligroso por reemplazo. Una sola tarea, un solo procedimiento, tres normas cumplidas a la vez.
 
 →
 
